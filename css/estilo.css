@@ -1,0 +1,131 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Logo {
+    text-align: center;
+}
+.Logo img{
+    width: 50px;
+    border-radius: 70%;}
+h1, h2 {
+    text-align: center;
+    color: aqua;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+p{
+    line-height: 2; font-weight: 700;
+    color: aqua;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    border-style: groove;
+    text-decoration: none;
+}
+
+.menu{
+    padding: 10px;
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+    text-align: center;
+}
+.menu li{
+    display: inline-table;
+}
+.menu li a{
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.menu li a:hover{
+    background-color: orange;
+    border-radius: 100%;
+    color: black;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1.6fr;
+    grid-template-rows: 0.7fr 1.4fr 1.4fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Header Header Header"
+    "div1 div1 div2"
+    "dvi3 dvi3 div4"
+    "footer footer footer";
+}
+
+.Header { 
+    grid-area: Header; 
+}
+
+.div1 { 
+    grid-area: div1;
+    border: 2px red solid;
+    
+}
+
+.div2 { 
+    grid-area: div2;
+    border: 2px blue solid; 
+}
+
+.div4 { 
+    grid-area: div4;
+    border: 2px grey solid; 
+}
+  
+.dvi3 { 
+    grid-area: dvi3;
+    border: 2px green solid; 
+}
+  
+.footer { 
+    grid-area: footer;
+    border: 2px magenta solid;
+    background-color: brown; 
+}
+
+.menu{
+    
+        clear: left;
+        text-align: right;
+        vertical-align: middle;
+        line-height:2px;
+}
+    
+.navegadora{
+    background-image: url(../fotospag/descarga.jpg)
+}
+.formulario{
+    background-color: azure;
+}
+.cuadroCompe{
+    background-color: darkgrey;
+}
+*{
+    font-family: 'Grenze Gotisch', serif;
+}
+fotoMain{
+    width: 400px;
+    height: 400px;
+    margin:10px;
+    border: double grey 2px;
+    border-style:groove ;
+    opacity: 0.4;
+}
+img:hover{
+    opacity: 1;
+    border: white solid;
+}
